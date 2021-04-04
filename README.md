@@ -5,11 +5,11 @@ Submission for KJSCE Hack 5.0 , April 2021.
 **About:**
 
 An effortless web application to display transparent medical records of any given patient. 
-In this, any verified  Medical professional can fetch in the complete medical history of his/her patient and get to know the background better. The records will give information like 
-a. Date of Visit
-b. Doctor Visited
-c. Problem diagnosed
-d. Medicines prescribed
+In this, any verified  Medical professional can fetch in the complete medical history of his/her patient and get to know the background better. The records will give information like -
+1. Date of Visit
+2. Doctor Visited
+3. Problem diagnosed
+4. Medicines prescribed
 
 **Advantages:**
 1. This will surely help the doctor in cases where the diagnosis is based on history of the patient.
