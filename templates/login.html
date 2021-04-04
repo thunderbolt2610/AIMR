@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock title %}
+
+{% block head %}
+<link href="register.css" rel="stylesheet">
+{% endblock head %}
+
+{%block body %}
+
+<div class="container my-4">
+  <h1>Log In</h1>
+<form method="POST" action="/login">
+{% csrf_token %}
+<div class="mb-3">
+  <label for="username" class="form-label">Username</label>
+  <input type="text" class="w-25 form-control" id="username" name="username" placeholder="Enter Your Username">
+</div>
+<div class="mb-3">
+  <label for="password" class="form-label">Password</label>
+  <input type="password" class="w-25 form-control" id="password" name="password" placeholder="Enter Your Password">
+</div>
+<button type="submit" class="w-25 btn btn-primary mb-3">Log In</button>
+<p>Not Registered yet ? <a href="register">Register</a></p>
+</form>
+</div>
+
+{% endblock body %}
