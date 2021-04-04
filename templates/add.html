@@ -23,6 +23,11 @@
 <link rel="stylesheet" href="" />
 <!-- css code -->
 <style>
+hr.underline{
+  border: 3px solid ;
+  width: 50%;
+  background-colour: #000000;
+}
   body {
     font-family: "Karla", sans-serif;
     background-color: #d0d0ce;
@@ -148,7 +153,7 @@
     <div class="card login-card">
       <div class="row no-gutters">
         <div class="col-md-5">
-          <img src="image2.png" alt="login" class="login-card-img" />
+          <img src="/static/add.jpg" alt="login" class="login-card-img" />
         </div>
         <div class="col-md-7">
           <div class="card-body">
@@ -157,6 +162,7 @@
                 All India <span>Medical Records</span>
               </h3>
             </div>
+            <p class="login-card-description"><b>Add Patient Entry</b></p>
             <form method="POST" action="/add">
             {% csrf_token %}
               <div class="form-group mb-4" class="mb-3">

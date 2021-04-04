@@ -66,13 +66,22 @@ margin-bottom:10px;
  {% endblock head %}
 
 {% block body %}
+<style>
+hr.underline{
+  border: 3px solid ;
+  width: 50%;
+  background-colour: #000000;
+}
+</style>
 
+<div class="container my-4">
+  <h1 class='text-center'>Welcome Doctor !!</h1>
+  <center><hr class="underline"></center>
+</div>
 <div class=" changeflex d-flex flex-row ">
         <div>
-            <img id='welcome-img' src="Doctor.png" style="height:100vh;width: auto;">
+            <img id='welcome-img' src="/static/doctor.jpg" style="height:100vh;width: auto;">
             <div id="text_on_image">
-                <p></p>Welcome Doctor!</p>
-                <hr style="height: 3px; width:50vw;color: black;">
             </div>
         </div>
 
