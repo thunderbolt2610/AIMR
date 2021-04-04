@@ -3,6 +3,500 @@
 {% block title %}Home{% endblock title %}
 
 {% block body %}
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <title></title>
+<style>
+	/* <!------------------ Part 0---------------------> */
+	div.background{
+  background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
+    url('image1.jpeg');
+  background-color: #1C2434;
+  width:100%;
+  height: 650px;
+  margin-top:0px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.bar1{
+ margin-top:0px;
+  z-index: 3;
+height: 650px;
+}
+.book{
+  font-family: 'PT Serif', serif;
+  font-family: 'Ubuntu', sans-serif;
+  width:70%;
+  font-size: 70px;
+  margin-left:40px;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  color: white;
+  border-bottom: 1px solid white;
+  opacity: 1;
+}
+	/* <!------------------ Part 0 Ends---------------------> */
+#div2{
+	display:flex;
+	flex-direction:column;
+}
+#partA{
+	background: white;
+	height:350px;
+	margin:0;
+}
+#text1{
+	width: 900px;
+	padding:200px 100px;
+ 	display:block;
+	float:left;
+	color:black;
+	font-size:30px;
+	justify-content:center;
+}
+#partB{
+	background-color:#1C2434;
+	height:400px;
+	color:white;
+	justify-content:center;
+	margin:0;
+}
+#text2{
+	width: 700px;
+	padding:100px 100px;
+	display:block;
+	color:white;
+	font-size:25px;
+	justify-content:center;
+}
+@media (min-width: 800px) {
+#docimg{
+	position: absolute;
+	top:850px;
+	right:100px;
+	z-index:2;
+}
+#docimg>img{width:550px;}}
+
+@media (max-width: 800px) {
+div.background{  background-size: cover;}
+
+#partB{height:350px;}
+#partA{height:200px;}
+#text2,#text1{
+font-size:calc(60% + 1vw + 1vh);
+margin:0;
+padding:50px;
+width:100%;
+}
+
+#docimg {
+   position:static;
+	width:100%;
+
+  }
+#docimg>img{width:100%;
+}
+}
+/* <!------------------ Part 1 Ends---------------------> */
+
+/* <!------------------ Part 2---------------------> */
+body{margin-top:20px;}
+
+.container1{
+	position: static;
+}
+.align-center {
+	text-align: center;
+	padding: 20px;
+}
+.hash-list {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px){
+    .hash-list.cols-3 > li:nth-last-child(-n+3) {
+        border-bottom: none;
+    }
+}
+@media (min-width: 768px){
+    .hash-list.cols-3 > li {
+        width: 33.3333%;
+    }
+}
+.hash-list > li {
+    display: block;
+    float: left;
+    /*#border-right: 1px solid rgba(0, 0, 0, 0.2);*/
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.2);*/
+  
+}
+.pad-30, .pad-30-all > * {
+    padding: 30px;
+}
+img {
+    border: 0;
+}
+.mgb-20, .mgb-20-all > * {
+    margin-bottom: 20px;
+}
+.wpx-100, .wpx-100-after:after {
+    width: 100px;
+}
+.img-round, .img-rel-round {
+    border-radius: 50%;
+}
+.padb-30, .padb-30-all > * {
+    padding-bottom: 30px;
+}
+
+.mgb-40, .mgb-40-all > * {
+    margin-bottom: 40px;
+}
+.align-center {
+    text-align: center;
+}
+[class*="line-b"] {
+    position: relative;
+    padding-bottom: 20px;
+    border-color: #E6AF2A;
+}
+.fg-text-d, .fg-hov-text-d:hover, .fg-active-text-d.active {
+    color: #1C2434;
+}
+.font-cond-b {
+    font-weight: 700 !important;
+    color: #1C2434 !important;
+}
+.list-text{
+	background-color: white;
+  padding-left: 3%;
+  padding-right: 3%;
+	padding-bottom: 200px;
+
+}
+/* .fs-110{
+	color: #ffffff !important;
+} */
+.featured-text{
+	color:#1C2434 !important;
+}
+span{
+	padding-top: 10px;
+}
+/* .fs-80{
+	color: #ffffff !important;
+} */
+/* build your own custom Bootstrap theme:
+   https://themestr.app
+*/
+/* <!------------------ Part 2 Ends ---------------------> */
+
+/* <!------------------ Part 3 ---------------------> */
+
+.footer-distributed{
+	background-color:#1C2434;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding-top: 20px;
+	z-index:1;
+	position: static;
+	padding: 50px 50px;
+
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.h3{
+	padding-top: 30px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+</style>
+
+	<div class="background">
+		<div class="bar1">
+		  <p class="book">All India Medical Records </p>
+	  
+		  <!-- Some picture -->
+		  <div class="image"></div>
+    <div id="docimg"><img src="/static/home1.png" alt="Doctor" width="140%"></div>
+		</div>
+	  </div>
+	
+	<div id="div2">
+		<div id="partA">
+		<div id="text1"><b> Give Doctors access to your records! </b></div>
+		</div>
+		<div id="docimg"><img src="/static/home2.png" alt="Doctor" width="140%"></div>
+		<div id="partB">
+		<div id="text2"><b> With 25 years of industry experience, doctors find it difficult to manage records.We are here to help them do just that. This makes it easier for doctors to diagnose the patient them well.</b></div>
+		</div>
+		
+		</div> 
+
+<div>
+<div class="container1"></div>
+    <div class="mgb-40 padb-30 auto-invert line-b-4 align-center bar2-text ">
+        <h4 class="font-cond-l fg-accent lts-md mgb-10" contenteditable="false">Not Yet Convinced?</h4>
+        <h1 class="font-cond-b fg-text-d lts-md fs-300 fs-300-xs no-mg featured-text" contenteditable="false">Featured Reviews</h1>
+	</div>
+	
+        <ul class="hash-list cols-3 cols-1-xs pad-30-all align-center text-sm">
+        <li class="list-text">
+	 <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="wpx-100 img-round mgb-20 tile1" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+			<p class="fs-110 font-cond-l" contenteditable="false">" AIMR has helped me diagnose patients better.As all their records are easily available, now I can focus on their new prescriptions."</p>
+			<h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Dr Jake Lark</h5>
+			<small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false"> Orthodontist - New York</small>
+		  </li>	
+        
+  
+
+
+		  <li class="list-text">
+          <img src="https://bootdey.com/img/Content/avatar/avatar4.png" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+          <p class="fs-110 font-cond-l" contenteditable="false">"AIMR is helpful,In cases where they change doctors its difficult to get access to patient records"</p>
+          <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Dr. Jane Justice</h5>
+          <small class="font-cond case-u lts-sm fs-80 fg-text-l" contenteditable="false">Dermatologist- Los Angeles</small>
+        </li>
+        <li class="list-text">
+          <img src="https://bootdey.com/img/Content/avatar/avatar5.png" class="wpx-100 img-round mgb-20" title="" alt="" data-edit="false" data-editor="field" data-field="src[Image Path]; title[Image Title]; alt[Image Alternate Text]">
+          <p class="fs-110 font-cond-l" contenteditable="false">" It's been a smooth journey with AIMR as it is a centralized system ,transitioning all our patient records here soon ."</p>
+          <h5 class="font-cond mgb-5 fg-text-d fs-130" contenteditable="false">Dr Bo Lee</h5>
+          <small class="font-cond case-u lts-sm fs-80 fg-text-l " contenteditable="false">Neuroseorgeon- Chicago</small>
+        </li>
+      </ul>
+	</div>
+</div>
+<div><br></div>
+
+
+<footer class="footer-distributed">
+<div class="footer-padding">	<div class="footer-left">
+
+<br>
+
+	<h3  style="margin-top:20px;">All India <span>Medical Records</span></h3>
+	<span >    </span>
+	<span >   </span>
+	<p class="footer-links">
+		<a href="#">Home</a>
+	
+
+
+		·
+		<a href="#">About</a>
+		·
+		<a href="#">Faq</a>
+		·
+		<a href="#">Contact</a>
+	</p>
+	
+	<p class="footer-company-name">All India Medical Records &copy; 2021</p>
+</div>
+
+<div class="footer-center">
+
+	<div>
+		<i class="fa fa-map-marker"></i>
+		<p><span>123 Anywhere St.
+</span> Any City, ST 12345</p>
+	</div>
+
+	<div>
+		<i class="fa fa-phone"></i>
+		<p>(123) 456-7890</p>
+	</div>
+
+	<div>
+		<i class="fa fa-envelope"></i>
+		<p>hello@reallygreatsite.com</p>
+	</div>
+
+</div>
+
+<div class="footer-right">
+
+	<p class="footer-company-about">
+		
+		<span><br>
+			<br>About the company</span>
+		Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+	</p>
+
+
+
+</div></div>
+
+
+</footer>
+
+		<!------------------ Part 3 Ends --------------------->
 
 
 
