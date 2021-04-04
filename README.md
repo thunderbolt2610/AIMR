@@ -1,4 +1,4 @@
-**AIMR**
+**A.I.M.R [ All India Medical Records ]**
 
 Submission for KJSCE Hack 5.0 , April 2021.
 
