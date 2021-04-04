@@ -10,7 +10,7 @@ b. Doctor Visited
 c. Problem diagnosed
 d. Medicines prescribed
 
-**dvantages:**
+**Advantages:**
 1. This will surely help the doctor in cases where the diagnosis is based on history of the patient.
 2. The trend in the drugs prescribed will help treat the patient better
 3. We aim to make the entire system centralized with the help of the government of India by connecting the medical history of the patient with aadhar card number
